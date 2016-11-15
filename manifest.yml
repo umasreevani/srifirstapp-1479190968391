@@ -1,0 +1,11 @@
+applications:
+- path: javaCloudantWorkloadSchedulerApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: srifirstapp
+  host: srifirstapp
+  disk_quota: 1024M
+  services:
+  - srifirstapp-cloudantNoSQLDB
+  - srifirstapp-WorkloadScheduler
